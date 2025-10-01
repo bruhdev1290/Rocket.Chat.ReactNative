@@ -27,6 +27,16 @@ const THEMES: ITheme[] = [
 		group: THEME_GROUP
 	},
 	{
+		label: 'Sandstone',
+		value: 'sandstone',
+		group: THEME_GROUP
+	},
+	{
+		label: 'Light Gray',
+		value: 'lightGray',
+		group: THEME_GROUP
+	},
+	{
 		label: 'Dark',
 		value: 'dark',
 		group: THEME_GROUP
@@ -44,10 +54,12 @@ const THEMES: ITheme[] = [
 ];
 
 if (supportSystemTheme()) {
+	// Only add 'Automatic' for light/dark/black, not for new themes
 	THEMES.unshift(SYSTEM_THEME);
 }
 
-const themeGroup = THEMES.filter(item => item.group === THEME_GROUP);
+// Filter out 'automatic' for sandstone and lightGray
+const themeGroup = THEMES.filter(item => item.group === THEME_GROUP && item.value !== 'automatic');
 const darkGroup = THEMES.filter(item => item.group === DARK_GROUP);
 
 interface ITheme {
@@ -129,36 +141,46 @@ const ThemeView = (): React.ReactElement => {
 
 	return (
 		<SafeAreaView testID='theme-view'>
-			<List.Container>
-				<List.Section title='Theme'>
-					<List.Separator />
-					<>
-						{themeGroup.map(theme => (
-							<Item
-								onPress={() => onClick(theme)}
-								label={theme.label}
-								value={theme.value}
-								isSelected={!!isSelected(theme)}
-								key={theme.label}
-							/>
-						))}
-					</>
-				</List.Section>
-				<List.Section title='Dark_level'>
-					<List.Separator />
-					<>
-						{darkGroup.map(theme => (
-							<Item
-								onPress={() => onClick(theme)}
-								label={theme.label}
-								value={theme.value}
-								isSelected={!!isSelected(theme)}
-								key={theme.label}
-							/>
-						))}
-					</>
-				</List.Section>
-			</List.Container>
+			<List.Container children={(
+				<>
+					<List.Section
+						title='Theme'
+						children={(
+							<>
+								<List.Separator />
+								{themeGroup.map(theme => (
+									<React.Fragment key={theme.label}>
+										<Item
+											onPress={() => onClick(theme)}
+											label={theme.label}
+											value={theme.value}
+											isSelected={!!isSelected(theme)}
+										/>
+									</React.Fragment>
+								))}
+							</>
+						)}
+					/>
+					<List.Section
+						title='Dark_level'
+						children={(
+							<>
+								<List.Separator />
+								{darkGroup.map(theme => (
+									<React.Fragment key={theme.label}>
+										<Item
+											onPress={() => onClick(theme)}
+											label={theme.label}
+											value={theme.value}
+											isSelected={!!isSelected(theme)}
+										/>
+									</React.Fragment>
+								))}
+							</>
+						)}
+					/>
+				</>
+			)} />
 		</SafeAreaView>
 	);
 };

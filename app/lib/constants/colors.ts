@@ -277,6 +277,190 @@ const black = {
 	buttonSuccessDisabled: '#757575'
 };
 
+const sandstone = {
+	surfaceLight: '#D9C6A9',
+	surfaceTint: '#D9C6A9',
+	surfaceRoom: '#D9C6A9',
+	surfaceNeutral: '#CBB893',
+	surfaceDisabled: '#D9C6A9',
+	surfaceHover: '#CBB893',
+	surfaceSelected: '#BCA77D',
+	surfaceDark: '#7C5E3C',
+	surfaceFeatured: '#C2A477',
+	surfaceFeaturedHover: '#A68B5B',
+
+	strokeExtraLight: '#E9D8C6',
+	strokeLight: '#D8BFA3',
+	strokeMedium: '#C2A477',
+	strokeDark: '#A68B5B',
+	strokeExtraDark: '#7C5E3C',
+	strokeExtraLightHighlight: '#F5E9DA',
+	strokeHighlight: '#C2A477',
+	strokeExtraLightError: '#FFD1C1',
+	strokeError: '#D47C0C',
+
+	fontWhite: '#FFFFFF',
+	fontDisabled: '#C2A477',
+	fontAnnotation: '#A68B5B',
+	fontHint: '#7C5E3C',
+	fontSecondaryInfo: '#A68B5B',
+	fontDefault: '#7C5E3C',
+	fontTitlesLabels: '#5C4321',
+	fontInfo: '#D47C0C',
+	fontDanger: '#D40C26',
+	fontPureBlack: '#5C4321',
+	fontPureWhite: '#FFFFFF',
+
+	statusBackgroundInfo: '#F5E9DA',
+	statusBackgroundSuccess: '#E2C9A5',
+	statusBackgroundDanger: '#FFD1C1',
+	statusBackgroundWarning: '#FFF6D6',
+	statusBackgroundWarning2: '#F5E9DA',
+	statusBackgroundService: '#E9D8C6',
+	statusBackgroundService2: '#EDD0F7',
+	statusFontInfo: '#D47C0C',
+	statusFontSuccess: '#A68B5B',
+	statusFontDanger: '#D40C26',
+	statusFontWarning: '#A68B5B',
+	statusFontWarning2: '#5C4321',
+	statusFontService: '#C2A477',
+	statusFontService2: '#7C5E3C',
+
+	badgeBackgroundLevel1: '#A68B5B',
+	badgeBackgroundLevel2: '#C2A477',
+	badgeBackgroundLevel3: '#D47C0C',
+	badgeBackgroundLevel4: '#D40C26',
+
+	userPresenceOnline: '#158D65',
+	userPresenceBusy: '#D40C26',
+	userPresenceAway: '#AC892F',
+	userPresenceOffline: '#A68B5B',
+	userPresenceDisabled: '#C2A477',
+
+	buttonBackgroundPrimaryDefault: '#C2A477',
+	buttonBackgroundPrimaryPress: '#A68B5B',
+	buttonBackgroundPrimaryDisabled: '#E9D8C6',
+
+	buttonBackgroundSecondaryDefault: '#E2C9A5',
+	buttonBackgroundSecondaryPress: '#C2A477',
+	buttonBackgroundSecondaryDisabled: '#F5E9DA',
+
+	buttonBackgroundSecondaryDangerDefault: '#E2C9A5',
+	buttonBackgroundSecondaryDangerPress: '#C2A477',
+	buttonBackgroundSecondaryDangerDisabled: '#F5E9DA',
+
+	buttonBackgroundDangerDefault: '#D40C26',
+	buttonBackgroundDangerPress: '#A68B5B',
+	buttonBackgroundDangerDisabled: '#FFD1C1',
+
+	buttonBackgroundSuccessDefault: '#158D65',
+	buttonBackgroundSuccessPress: '#0D5940',
+	buttonBackgroundSuccessDisabled: '#E2C9A5',
+
+	buttonFontPrimary: '#FFFFFF',
+	buttonPrimaryDisabled: '#FFFFFF',
+	buttonFontSecondary: '#7C5E3C',
+	buttonSecondaryDisabled: '#C2A477',
+	buttonFontSecondaryDanger: '#A68B5B',
+	buttonSecondaryDangerDisabled: '#FFD1C1',
+	buttonFontDanger: '#FFFFFF',
+	buttonDangerDisabled: '#FFFFFF',
+	buttonFontSuccess: '#FFFFFF',
+	buttonSuccessDisabled: '#FFFFFF'
+};
+
+const lightGray = {
+	surfaceLight: '#E5E5E5',
+	surfaceTint: '#E5E5E5',
+	surfaceRoom: '#E5E5E5',
+	surfaceNeutral: '#CCCCCC',
+	surfaceDisabled: '#E5E5E5',
+	surfaceHover: '#CCCCCC',
+	surfaceSelected: '#B3B3B3',
+	surfaceDark: '#2F343D',
+	surfaceFeatured: '#B0B0B0',
+	surfaceFeaturedHover: '#A0A0A0',
+
+	strokeExtraLight: '#EDEDED',
+	strokeLight: '#D3D3D3',
+	strokeMedium: '#B0B0B0',
+	strokeDark: '#A0A0A0',
+	strokeExtraDark: '#2F343D',
+	strokeExtraLightHighlight: '#F7F7F7',
+	strokeHighlight: '#B0B0B0',
+	strokeExtraLightError: '#FFC1C9',
+	strokeError: '#EC0D2A',
+
+	fontWhite: '#FFFFFF',
+	fontDisabled: '#B0B0B0',
+	fontAnnotation: '#A0A0A0',
+	fontHint: '#6C727A',
+	fontSecondaryInfo: '#A0A0A0',
+	fontDefault: '#2F343D',
+	fontTitlesLabels: '#1F2329',
+	fontInfo: '#095AD2',
+	fontDanger: '#D40C26',
+	fontPureBlack: '#2F343D',
+	fontPureWhite: '#FFFFFF',
+
+	statusBackgroundInfo: '#EDEDED',
+	statusBackgroundSuccess: '#C0F6E4',
+	statusBackgroundDanger: '#FFC1C9',
+	statusBackgroundWarning: '#FFECAD',
+	statusBackgroundWarning2: '#FFF6D6',
+	statusBackgroundService: '#FAD1B0',
+	statusBackgroundService2: '#EDD0F7',
+	statusFontInfo: '#095AD2',
+	statusFontSuccess: '#148660',
+	statusFontDanger: '#9B1325',
+	statusFontWarning: '#8E6300',
+	statusFontWarning2: '#2F343D',
+	statusFontService: '#974809',
+	statusFontService2: '#7F1B9F',
+
+	badgeBackgroundLevel1: '#B0B0B0',
+	badgeBackgroundLevel2: '#1D74F5',
+	badgeBackgroundLevel3: '#F38C39',
+	badgeBackgroundLevel4: '#F5455C',
+
+	userPresenceOnline: '#158D65',
+	userPresenceBusy: '#D40C26',
+	userPresenceAway: '#AC892F',
+	userPresenceOffline: '#A0A0A0',
+	userPresenceDisabled: '#F38C39',
+
+	buttonBackgroundPrimaryDefault: '#B0B0B0',
+	buttonBackgroundPrimaryPress: '#A0A0A0',
+	buttonBackgroundPrimaryDisabled: '#EDEDED',
+
+	buttonBackgroundSecondaryDefault: '#E0E0E0',
+	buttonBackgroundSecondaryPress: '#B0B0B0',
+	buttonBackgroundSecondaryDisabled: '#F2F2F2',
+
+	buttonBackgroundSecondaryDangerDefault: '#E0E0E0',
+	buttonBackgroundSecondaryDangerPress: '#B0B0B0',
+	buttonBackgroundSecondaryDangerDisabled: '#F2F2F2',
+
+	buttonBackgroundDangerDefault: '#EC0D2A',
+	buttonBackgroundDangerPress: '#BB0B21',
+	buttonBackgroundDangerDisabled: '#FFC1C9',
+
+	buttonBackgroundSuccessDefault: '#158D65',
+	buttonBackgroundSuccessPress: '#0D5940',
+	buttonBackgroundSuccessDisabled: '#C0F6E4',
+
+	buttonFontPrimary: '#FFFFFF',
+	buttonPrimaryDisabled: '#FFFFFF',
+	buttonFontSecondary: '#2F343D',
+	buttonSecondaryDisabled: '#B0B0B0',
+	buttonFontSecondaryDanger: '#BB0B21',
+	buttonSecondaryDangerDisabled: '#F98F9D',
+	buttonFontDanger: '#FFFFFF',
+	buttonDangerDisabled: '#FFFFFF',
+	buttonFontSuccess: '#FFFFFF',
+	buttonSuccessDisabled: '#FFFFFF'
+};
+
 export const colors = {
 	light: {
 		...light,
@@ -298,6 +482,20 @@ export const colors = {
 		overlayBackground,
 		backdropOpacity: 0.9,
 		attachmentLoadingOpacity: 0.3
+	},
+	sandstone: {
+		...sandstone,
+		backdropColor,
+		overlayBackground,
+		backdropOpacity: 0.3,
+		attachmentLoadingOpacity: 0.7
+	},
+	lightGray: {
+		...lightGray,
+		backdropColor,
+		overlayBackground,
+		backdropOpacity: 0.3,
+		attachmentLoadingOpacity: 0.7
 	}
 };
 

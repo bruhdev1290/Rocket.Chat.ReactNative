@@ -1,4 +1,4 @@
-export type TThemeMode = 'automatic' | 'light' | 'dark';
+export type TThemeMode = 'automatic' | 'light' | 'dark' | 'sandstone' | 'lightGray';
 
 export type TDarkLevel = 'black' | 'dark';
 
